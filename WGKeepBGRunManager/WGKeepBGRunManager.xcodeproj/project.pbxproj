@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE28C7A72617151A007B31CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7A62617151A007B31CF /* AppDelegate.m */; };
+		DE28C7AA2617151A007B31CF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7A92617151A007B31CF /* SceneDelegate.m */; };
+		DE28C7AD2617151B007B31CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7AC2617151B007B31CF /* ViewController.m */; };
+		DE28C7B02617151B007B31CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE28C7AE2617151B007B31CF /* Main.storyboard */; };
+		DE28C7B22617151D007B31CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE28C7B12617151D007B31CF /* Assets.xcassets */; };
+		DE28C7B52617151D007B31CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE28C7B32617151D007B31CF /* LaunchScreen.storyboard */; };
+		DE28C7B82617151D007B31CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7B72617151D007B31CF /* main.m */; };
+		DE28C7C22617151D007B31CF /* WGKeepBGRunManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7C12617151D007B31CF /* WGKeepBGRunManagerTests.m */; };
+		DE28C7CD2617151D007B31CF /* WGKeepBGRunManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7CC2617151D007B31CF /* WGKeepBGRunManagerUITests.m */; };
+		DE28C7E426171568007B31CF /* WGKeepBGRunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7E026171568007B31CF /* WGKeepBGRunManager.m */; };
+		DE28C7E526171568007B31CF /* WGProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE28C7E326171568007B31CF /* WGProxy.m */; };
+		DE28C85226171A76007B31CF /* mute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DE28C85126171A76007B31CF /* mute.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE28C7BE2617151D007B31CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE28C79A2617151A007B31CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE28C7A12617151A007B31CF;
+			remoteInfo = WGKeepBGRunManager;
+		};
+		DE28C7C92617151D007B31CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE28C79A2617151A007B31CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE28C7A12617151A007B31CF;
+			remoteInfo = WGKeepBGRunManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE28C7A22617151A007B31CF /* WGKeepBGRunManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WGKeepBGRunManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28C7A52617151A007B31CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE28C7A62617151A007B31CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE28C7A82617151A007B31CF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		DE28C7A92617151A007B31CF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		DE28C7AB2617151A007B31CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE28C7AC2617151B007B31CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE28C7AF2617151B007B31CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE28C7B12617151D007B31CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE28C7B42617151D007B31CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE28C7B62617151D007B31CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28C7B72617151D007B31CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE28C7BD2617151D007B31CF /* WGKeepBGRunManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGKeepBGRunManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28C7C12617151D007B31CF /* WGKeepBGRunManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGKeepBGRunManagerTests.m; sourceTree = "<group>"; };
+		DE28C7C32617151D007B31CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28C7C82617151D007B31CF /* WGKeepBGRunManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGKeepBGRunManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE28C7CC2617151D007B31CF /* WGKeepBGRunManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGKeepBGRunManagerUITests.m; sourceTree = "<group>"; };
+		DE28C7CE2617151D007B31CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE28C7E026171568007B31CF /* WGKeepBGRunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGKeepBGRunManager.m; sourceTree = "<group>"; };
+		DE28C7E126171568007B31CF /* WGKeepBGRunManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGKeepBGRunManager.h; sourceTree = "<group>"; };
+		DE28C7E226171568007B31CF /* WGProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGProxy.h; sourceTree = "<group>"; };
+		DE28C7E326171568007B31CF /* WGProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGProxy.m; sourceTree = "<group>"; };
+		DE28C85126171A76007B31CF /* mute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mute.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE28C79F2617151A007B31CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28C7BA2617151D007B31CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28C7C52617151D007B31CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE28C7992617151A007B31CF = {
+			isa = PBXGroup;
+			children = (
+				DE28C7A42617151A007B31CF /* WGKeepBGRunManager */,
+				DE28C7C02617151D007B31CF /* WGKeepBGRunManagerTests */,
+				DE28C7CB2617151D007B31CF /* WGKeepBGRunManagerUITests */,
+				DE28C7A32617151A007B31CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE28C7A32617151A007B31CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE28C7A22617151A007B31CF /* WGKeepBGRunManager.app */,
+				DE28C7BD2617151D007B31CF /* WGKeepBGRunManagerTests.xctest */,
+				DE28C7C82617151D007B31CF /* WGKeepBGRunManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE28C7A42617151A007B31CF /* WGKeepBGRunManager */ = {
+			isa = PBXGroup;
+			children = (
+				DE28C7A52617151A007B31CF /* AppDelegate.h */,
+				DE28C7A62617151A007B31CF /* AppDelegate.m */,
+				DE28C7A82617151A007B31CF /* SceneDelegate.h */,
+				DE28C7A92617151A007B31CF /* SceneDelegate.m */,
+				DE28C7AB2617151A007B31CF /* ViewController.h */,
+				DE28C7AC2617151B007B31CF /* ViewController.m */,
+				DE28C7E126171568007B31CF /* WGKeepBGRunManager.h */,
+				DE28C7E026171568007B31CF /* WGKeepBGRunManager.m */,
+				DE28C85126171A76007B31CF /* mute.mp3 */,
+				DE28C7E226171568007B31CF /* WGProxy.h */,
+				DE28C7E326171568007B31CF /* WGProxy.m */,
+				DE28C7AE2617151B007B31CF /* Main.storyboard */,
+				DE28C7B12617151D007B31CF /* Assets.xcassets */,
+				DE28C7B32617151D007B31CF /* LaunchScreen.storyboard */,
+				DE28C7B62617151D007B31CF /* Info.plist */,
+				DE28C7B72617151D007B31CF /* main.m */,
+			);
+			path = WGKeepBGRunManager;
+			sourceTree = "<group>";
+		};
+		DE28C7C02617151D007B31CF /* WGKeepBGRunManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE28C7C12617151D007B31CF /* WGKeepBGRunManagerTests.m */,
+				DE28C7C32617151D007B31CF /* Info.plist */,
+			);
+			path = WGKeepBGRunManagerTests;
+			sourceTree = "<group>";
+		};
+		DE28C7CB2617151D007B31CF /* WGKeepBGRunManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE28C7CC2617151D007B31CF /* WGKeepBGRunManagerUITests.m */,
+				DE28C7CE2617151D007B31CF /* Info.plist */,
+			);
+			path = WGKeepBGRunManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE28C7A12617151A007B31CF /* WGKeepBGRunManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28C7D12617151D007B31CF /* Build configuration list for PBXNativeTarget "WGKeepBGRunManager" */;
+			buildPhases = (
+				DE28C79E2617151A007B31CF /* Sources */,
+				DE28C79F2617151A007B31CF /* Frameworks */,
+				DE28C7A02617151A007B31CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WGKeepBGRunManager;
+			productName = WGKeepBGRunManager;
+			productReference = DE28C7A22617151A007B31CF /* WGKeepBGRunManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE28C7BC2617151D007B31CF /* WGKeepBGRunManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28C7D42617151D007B31CF /* Build configuration list for PBXNativeTarget "WGKeepBGRunManagerTests" */;
+			buildPhases = (
+				DE28C7B92617151D007B31CF /* Sources */,
+				DE28C7BA2617151D007B31CF /* Frameworks */,
+				DE28C7BB2617151D007B31CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE28C7BF2617151D007B31CF /* PBXTargetDependency */,
+			);
+			name = WGKeepBGRunManagerTests;
+			productName = WGKeepBGRunManagerTests;
+			productReference = DE28C7BD2617151D007B31CF /* WGKeepBGRunManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE28C7C72617151D007B31CF /* WGKeepBGRunManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE28C7D72617151D007B31CF /* Build configuration list for PBXNativeTarget "WGKeepBGRunManagerUITests" */;
+			buildPhases = (
+				DE28C7C42617151D007B31CF /* Sources */,
+				DE28C7C52617151D007B31CF /* Frameworks */,
+				DE28C7C62617151D007B31CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE28C7CA2617151D007B31CF /* PBXTargetDependency */,
+			);
+			name = WGKeepBGRunManagerUITests;
+			productName = WGKeepBGRunManagerUITests;
+			productReference = DE28C7C82617151D007B31CF /* WGKeepBGRunManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE28C79A2617151A007B31CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DE28C7A12617151A007B31CF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DE28C7BC2617151D007B31CF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DE28C7A12617151A007B31CF;
+					};
+					DE28C7C72617151D007B31CF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = DE28C7A12617151A007B31CF;
+					};
+				};
+			};
+			buildConfigurationList = DE28C79D2617151A007B31CF /* Build configuration list for PBXProject "WGKeepBGRunManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE28C7992617151A007B31CF;
+			productRefGroup = DE28C7A32617151A007B31CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE28C7A12617151A007B31CF /* WGKeepBGRunManager */,
+				DE28C7BC2617151D007B31CF /* WGKeepBGRunManagerTests */,
+				DE28C7C72617151D007B31CF /* WGKeepBGRunManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE28C7A02617151A007B31CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28C7B52617151D007B31CF /* LaunchScreen.storyboard in Resources */,
+				DE28C85226171A76007B31CF /* mute.mp3 in Resources */,
+				DE28C7B22617151D007B31CF /* Assets.xcassets in Resources */,
+				DE28C7B02617151B007B31CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28C7BB2617151D007B31CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28C7C62617151D007B31CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE28C79E2617151A007B31CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28C7E426171568007B31CF /* WGKeepBGRunManager.m in Sources */,
+				DE28C7AD2617151B007B31CF /* ViewController.m in Sources */,
+				DE28C7A72617151A007B31CF /* AppDelegate.m in Sources */,
+				DE28C7B82617151D007B31CF /* main.m in Sources */,
+				DE28C7E526171568007B31CF /* WGProxy.m in Sources */,
+				DE28C7AA2617151A007B31CF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28C7B92617151D007B31CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28C7C22617151D007B31CF /* WGKeepBGRunManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE28C7C42617151D007B31CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE28C7CD2617151D007B31CF /* WGKeepBGRunManagerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE28C7BF2617151D007B31CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE28C7A12617151A007B31CF /* WGKeepBGRunManager */;
+			targetProxy = DE28C7BE2617151D007B31CF /* PBXContainerItemProxy */;
+		};
+		DE28C7CA2617151D007B31CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE28C7A12617151A007B31CF /* WGKeepBGRunManager */;
+			targetProxy = DE28C7C92617151D007B31CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE28C7AE2617151B007B31CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE28C7AF2617151B007B31CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE28C7B32617151D007B31CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE28C7B42617151D007B31CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE28C7CF2617151D007B31CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE28C7D02617151D007B31CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE28C7D22617151D007B31CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34G64UZ2Y7;
+				INFOPLIST_FILE = WGKeepBGRunManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WG.WGKeepBGRunManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DE28C7D32617151D007B31CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34G64UZ2Y7;
+				INFOPLIST_FILE = WGKeepBGRunManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WG.WGKeepBGRunManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DE28C7D52617151D007B31CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WGKeepBGRunManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WG.WGKeepBGRunManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGKeepBGRunManager.app/WGKeepBGRunManager";
+			};
+			name = Debug;
+		};
+		DE28C7D62617151D007B31CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WGKeepBGRunManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WG.WGKeepBGRunManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WGKeepBGRunManager.app/WGKeepBGRunManager";
+			};
+			name = Release;
+		};
+		DE28C7D82617151D007B31CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WGKeepBGRunManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WG.WGKeepBGRunManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGKeepBGRunManager;
+			};
+			name = Debug;
+		};
+		DE28C7D92617151D007B31CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WGKeepBGRunManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WG.WGKeepBGRunManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WGKeepBGRunManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE28C79D2617151A007B31CF /* Build configuration list for PBXProject "WGKeepBGRunManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28C7CF2617151D007B31CF /* Debug */,
+				DE28C7D02617151D007B31CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28C7D12617151D007B31CF /* Build configuration list for PBXNativeTarget "WGKeepBGRunManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28C7D22617151D007B31CF /* Debug */,
+				DE28C7D32617151D007B31CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28C7D42617151D007B31CF /* Build configuration list for PBXNativeTarget "WGKeepBGRunManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28C7D52617151D007B31CF /* Debug */,
+				DE28C7D62617151D007B31CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE28C7D72617151D007B31CF /* Build configuration list for PBXNativeTarget "WGKeepBGRunManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE28C7D82617151D007B31CF /* Debug */,
+				DE28C7D92617151D007B31CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE28C79A2617151A007B31CF /* Project object */;
+}

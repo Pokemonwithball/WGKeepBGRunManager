@@ -57,10 +57,13 @@ static WGKeepBGRunManager *_sharedManger;
     if (self = [super init]) {
         [self setupAudioSession];
         _queue = dispatch_queue_create("Mp3Play", NULL);
-        //静音文件
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"mute" ofType:@"mp3"];
-        NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-        self.playerBack = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+        //静音文件，通过代码生成，不需要本地音频文件
+        NSData *silentAudioData = [self silentAudioData];
+        NSError *playerError = nil;
+        self.playerBack = [[AVAudioPlayer alloc] initWithData:silentAudioData error:&playerError];
+        if (playerError) {
+            NSLog(@"Error initializing AVAudioPlayer: %@", playerError);
+        }
         [self.playerBack prepareToPlay];
         // 0.0~1.0,默认为1.0
         self.playerBack.volume = 0.01;
@@ -69,6 +72,50 @@ static WGKeepBGRunManager *_sharedManger;
         
     }
     return self;
+}
+
+/**
+ 生成静音音频数据，避免依赖本地音频文件
+ */
+- (NSData *)silentAudioData {
+    // 构建一个最小的静音 WAV 文件（44字节头部 + 少量静音PCM数据）
+    // 格式: 8000 Hz, 单声道, 16-bit PCM, 0.1秒
+    UInt32 sampleRate = 8000;
+    UInt16 numChannels = 1;
+    UInt16 bitsPerSample = 16;
+    UInt32 numSamples = sampleRate / 10; // 0.1秒
+    UInt32 dataSize = numSamples * numChannels * (bitsPerSample / 8);
+    UInt32 fileSize = 36 + dataSize;
+
+    NSMutableData *wavData = [NSMutableData dataWithCapacity:44 + dataSize];
+
+    // RIFF chunk
+    [wavData appendBytes:"RIFF" length:4];
+    [wavData appendBytes:&fileSize length:4];
+    [wavData appendBytes:"WAVE" length:4];
+
+    // fmt sub-chunk
+    [wavData appendBytes:"fmt " length:4];
+    UInt32 fmtSize = 16;
+    [wavData appendBytes:&fmtSize length:4];
+    UInt16 audioFormat = 1; // PCM
+    [wavData appendBytes:&audioFormat length:2];
+    [wavData appendBytes:&numChannels length:2];
+    [wavData appendBytes:&sampleRate length:4];
+    UInt32 byteRate = sampleRate * numChannels * bitsPerSample / 8;
+    [wavData appendBytes:&byteRate length:4];
+    UInt16 blockAlign = numChannels * bitsPerSample / 8;
+    [wavData appendBytes:&blockAlign length:2];
+    [wavData appendBytes:&bitsPerSample length:2];
+
+    // data sub-chunk
+    [wavData appendBytes:"data" length:4];
+    [wavData appendBytes:&dataSize length:4];
+    // 静音PCM数据（全零）
+    NSMutableData *silentPCM = [NSMutableData dataWithLength:dataSize];
+    [wavData appendData:silentPCM];
+
+    return wavData;
 }
 
 
